@@ -1,8 +1,8 @@
-FROM  centos:latest
+FROM  ubuntu:latest
 
 MAINTAINER agbawochinonso488@gmail.com
 
-RUN yum install -y httpd \
+RUN apt-get install -y apache2 \
 unzip
 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/consult.zip /var/www/html/
