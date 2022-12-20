@@ -3,7 +3,7 @@ FROM  centos:latest
 MAINTAINER smartobi2022@gmail.com
 
 RUN yum install -y httpd \
-zip\
+zip \
 unzip 
 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/consult.zip /var/www/html/
