@@ -1,9 +1,9 @@
-FROM  ubuntu:latest
+FROM  centos:latest
 
 MAINTAINER agbawochinonso488@gmail.com
 
-RUN apt-get install -y apache2 \
-unzip
+RUN yum install -y apache2 
+RUN yum install unzip
 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/consult.zip /var/www/html/
 WORKDIR /var/www/html/
