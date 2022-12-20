@@ -12,4 +12,4 @@ RUN unzip consult.zip
 RUN cp -rvf consultancy-website-template/* .
 RUN rm -rf consultancy-website-template consult.zip
 CMD ["/usr/sbin/httpd","-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
